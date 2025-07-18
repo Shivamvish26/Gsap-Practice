@@ -1,10 +1,10 @@
 import React from "react";
 import { navLinks } from "../../Constants";
-import { useGSAP } from "@gsap/react"; // ✅ Correct hook
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // ✅ Required for scroll animations
+import { ScrollTrigger } from "gsap/ScrollTrigger"; 
 
-gsap.registerPlugin(ScrollTrigger); // ✅ Register plugin
+gsap.registerPlugin(ScrollTrigger); 
 
 const Navbar = () => {
   useGSAP(() => {
@@ -20,7 +20,7 @@ const Navbar = () => {
       { backgroundColor: "transparent" },
       {
         backgroundColor: "#00000050",
-        backdropFilter: "blur(10px)", // ✅ Correct CSS property
+        backdropFilter: "blur(10px)", 
         duration: 1,
         ease: "power1.inOut",
       }
@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="logo" className="w-8 h-8" />
-          <p className="text-white font-semibold text-lg">Velvet Pour</p>
+          <p className="text-white font-semibold text-lg">MOJITO</p>
         </a>
 
         <ul className="flex gap-6">
